@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="page-intro">
+	<h1>Cryptography</h1>
+</div>
+<article class="page-mid">
+	<div class="box-title">
+		<h1 class="title">Encryption Methods</h1>
+		<hr class="underline">
+	</div>
+	<!-- <hr> -->
+	<div class="flex">
+		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">caeser</button>
+		<button class="box2" onclick="window.location.href='{% url 'autokey' %}'">autokey</button>
+		<button class="box2" onclick="window.location.href='{% url 'playfair' %}'">playfair</button>
+		<button class="box2" onclick="window.location.href='{% url 'des' %}'">s_des</button>
+		<button class="box2" onclick="window.location.href='{% url 'rsa' %}'">rsa</button>
+	</div>
+
+	<hr>
+	<div class="box-title">
+		<h1 class="title">Functions</h1>
+		<hr class="underline">
+	</div>
+		<div class="flex">
+		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">modulo</button>
+		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">congruence</button>
+		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">permutation</button>
+		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">shiftleft</button>
+		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">sbox</button>
+	</div>
+
+	<!-- 2222222222222222222222 -->
+</article>
+{% endblock content %}

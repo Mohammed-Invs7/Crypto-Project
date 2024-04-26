@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{% block title %}Cryptography{% endblock title %}</title>
+
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static '/css/mainStyle.css' %}">
+		{% block links %}{% endblock links %}
+	</head>
+	<body>
+		<div class="page-container">
+			<header class="page-header">
+			 <img src="" class="logo">
+			 <h1 class="title">Dreamers</h1>
+			</header>
+			{% block content %}{% endblock content %}
+			<footer class="page-footer">
+				<img class="key-icon footer-icons" src="./images/icons/key.png" type>
+				<img class="lock-icon footer-icons" src="./images/icons/lock.png" type>
+
+			</footer>
+		</div>
+	</body>
+</html>

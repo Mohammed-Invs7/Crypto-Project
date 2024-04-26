@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}methods{% endblock title %}
+
+{% block links %}
+		<link rel="stylesheet" type="text/css" href="{% static '/css/formStyle.css' %}">
+{% endblock links %}
+
+{% block content %}
+<article class="page-mid">
+    <div class="box-title">
+        <h1 class="title">{% block methodTitle %}methods{% endblock methodTitle %}</h1>
+        <hr class="underline">
+    </div>
+
+    <!-- <hr> -->
+    <form method="post" action="{% block formAction %}{% endblock formAction %}">
+        {% csrf_token %}
+        <div class="flex">
+            <label class="text-input-label" for="pl">Plain Text</label>
+            <input id="pl" class="text-input items" type="{% block plainInputType %}text{% endblock plainInputType %}" name="plain" value="{{ plain }}" title="Enter word to encryption"
+                   placeholder="Enter a word to en/decryption...">
+
+            {% block ChangeInputs %}
+            <label class="text-input-label" for="key">Key</label>
+            <input lang="en" id="key" class="text-input items" type="{% block keyInputType %}number{% endblock keyInputType %}" name="key" value="{{ key }}" title="Enter a key for use"
+                   placeholder="Enter a Key...">
+            {% endblock ChangeInputs %}
+            {% block moreInputs %}
+            {% endblock moreInputs %}
+            <label class="text-input-label" for="cy">Cypher Text</label>
+            <input id="cy" class="text-input items" type="text" disabled="" value="{% block result %}{% endblock result %}"
+                   placeholder="The result value will shown here...">
+            <button type="submit" class="box2 items btn-enc" name="type" value="encryption">encryption</button>
+            <button type="submit" class="box2 items btn-dec" name="type" value="decryption" >decryption</button>
+            {% block moreContent %}{% endblock moreContent %}
+        </div>
+    </form>
+</article>
+{% endblock content %}
