@@ -19,19 +19,20 @@
     font-size: 27px;
     text-align: center;
     border: none;
-    border-bottom: 10px white solid;
+    border-bottom: 10px #a7a7a7 solid;
     border-radius: 9px;
     outline: none;
     caret-color: #fff;
     color: var(--thirdColor);
 }
 
-.text-input:focus {
-
+.text-input:focus, .text-input:hover {
+    border-bottom-color:var(--thirdColor);
 }
 
 .text-input-label {
-	font: bold inhert ;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .flex {

@@ -153,18 +153,49 @@
 .page-footer {
 	grid-area: footer;
 	position: relative;
+	overflow: hidden;
 	background-color: var(--fiveColor);
 }
 
-.footer-icons {
-/*	width: 717.03px;
-    height: 717.03px;*/
-    position: absolute;
-    right: -111px;
-    top: -136px;
-    transform: rotate(53deg);
-    color: var( --forthColor);
+.page-footer .footer-content {
+    margin: 20px auto;
+    text-align: center;
+    color: var(--thirdColor);
 }
+
+.footer-title {
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(359deg, var(--forthColor) 20%, var(--thirdColor));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.names {
+    font-size: 24px;
+    margin: 8px auto;
+    text-transform: capitalize;
+}
+
+.footer-icons {
+    position: absolute;
+    width: 52vw;
+    height: 500px;
+    /*fill: var( --forthColor);*/
+}
+
+.lock-icon {
+    left: -10%;
+    top: -116px;
+    transform: rotate(45deg);
+}
+
+.key-icon {
+    right: -10%;
+    top: -116px;
+}
+
+
 
 /*#############################################*/
 

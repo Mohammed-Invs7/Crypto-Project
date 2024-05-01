@@ -20,12 +20,12 @@
         <div class="flex">
             <label class="text-input-label" for="pl">Plain Text</label>
             <input id="pl" class="text-input items" type="{% block plainInputType %}text{% endblock plainInputType %}" name="plain" value="{{ plain }}" title="Enter word to encryption"
-                   placeholder="Enter a word to en/decryption...">
+                   required="required" placeholder="Enter a word to en/decryption...">
 
             {% block ChangeInputs %}
             <label class="text-input-label" for="key">Key</label>
             <input lang="en" id="key" class="text-input items" type="{% block keyInputType %}number{% endblock keyInputType %}" name="key" value="{{ key }}" title="Enter a key for use"
-                   placeholder="Enter a Key...">
+                   required="required" placeholder="Enter a Key...">
             {% endblock ChangeInputs %}
             {% block moreInputs %}
             {% endblock moreInputs %}

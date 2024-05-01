@@ -51,7 +51,7 @@ def autokey(request):
 
 def playfair(request):
     if request.method == "GET":
-        return render(request, 'autoKey.html')
+        return render(request, 'autokey.html')
     if request.method == "POST":
         Type = request.POST['type']
         plain = request.POST['plain']
