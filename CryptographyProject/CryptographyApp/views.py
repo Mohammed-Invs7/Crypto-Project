@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .crypto import Caesar, AutoKey, Playfair, DES, RSA
+
+
 # Create your views here.
 # def dashboard(request):
 #     return render(request, 'dashboard.html')
@@ -7,8 +9,22 @@ from .crypto import Caesar, AutoKey, Playfair, DES, RSA
 #     result = request.GET['number1']
 #
 #     return render(request, 'modulo.html', {'result': result})
+def split_numbers(text):
+    return [int(char) for char in text]
+
+
+def permu(key, permutationList):
+    temp = []
+    for n in permutationList:
+        if n - 1 > len(key):
+            n = len(key)
+        temp.append(key[n - 1])
+    return temp
+
+
 def index(request):
     return render(request, 'index.html')
+
 
 def caeser(request):
     if request.method == "GET":
@@ -28,6 +44,7 @@ def caeser(request):
             'result': result
         }
         return render(request, 'caeser.html', context)
+
 
 def autokey(request):
     if request.method == "GET":
@@ -55,21 +72,23 @@ def playfair(request):
     if request.method == "POST":
         Type = request.POST['type']
         plain = request.POST['plain']
-        key = int(request.POST['key'])
-        plainList = list(plain.replace(' ', '').lower())
+        key = request.POST['key']
+        plainList = list(plain.lower().strip().replace(' ', ''))
+        keyList = list(key.replace(' ', '').lower())
         if Type == "encryption":
-            result = ''.join(Playfair.encryption(plainList, key))
+            cypherText, table = Playfair.encryption(plainList, keyList)
+            result = ''.join(cypherText)
         else:
-            result = ''.join(Playfair.decryption(plainList, key))
+            cypherText, table = Playfair.decryption(plainList, keyList)
+            result = ''.join(cypherText)
         context = {
             'plain': plain,
             'key': key,
-            'result': result
+            'result': result,
+            'table': table,
         }
         return render(request, 'playfair.html', context)
 
-def split_numbers(text):
-    return [int(char) for char in text]
 
 def des(request):
     if request.method == "GET":
@@ -92,6 +111,7 @@ def des(request):
             'result': result
         }
         return render(request, 'des.html', context)
+
 
 def rsa(request):
     if request.method == "GET":
@@ -118,3 +138,60 @@ def rsa(request):
         }
         return render(request, 'rsa.html', context)
 
+
+def modulo(request):
+    if request.method == "GET":
+        return render(request, 'modulo.html')
+    if request.method == "POST":
+        # Type = request.POST['type']
+        number1 = int(request.POST['plain'])
+        number2 = int(request.POST['key'])
+        # plainList = list(plain.replace(' ', '').lower())
+
+        result = number1 % number2
+        context = {
+            'plain': number1,
+            'key': number2,
+            'result': result
+        }
+        return render(request, 'modulo.html', context)
+
+
+def congruence(request):
+    if request.method == "GET":
+        return render(request, 'congruence.html')
+    if request.method == "POST":
+        # Type = request.POST['type']
+        # number1 % number2 == number3
+        number1 = int(request.POST['plain'])
+        number2 = int(request.POST['key'])
+        number3 = int(request.POST['number3'])
+        # plainList = list(plain.replace(' ', '').lower())
+
+        result = RSA.congruence(number1, number2, number3)
+        context = {
+            'plain': number1,
+            'key': number2,
+            'number3': number3,
+            'result': result,
+        }
+        return render(request, 'congruence.html', context)
+
+
+def permutation(request):
+    if request.method == "GET":
+        return render(request, 'permutation.html')
+    if request.method == "POST":
+        # Type = request.POST['type']
+        numbersText = request.POST['plain']
+        orderText = request.POST['key']
+        numbersList = split_numbers(numbersText.strip().split())
+        orderList = split_numbers(orderText.strip().split())
+        result = permu(numbersList, orderList)
+        result = ' '.join(map(str, result))
+        context = {
+            'plain': numbersText,
+            'key': orderText,
+            'result': result,
+        }
+        return render(request, 'permutation.html', context)

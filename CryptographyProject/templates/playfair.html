@@ -6,7 +6,18 @@
 {% block methodTitle %}Playfair{% endblock methodTitle %}
 
 {% block formAction %}playfair{% endblock formAction %}
+<!-- form start -->
+<!-- plain input: -->
+{% block plainTitle %}Enter word to encryption{% endblock plainTitle %}
+{% block plainPlaceholder %}Enter a word to en/decryption...{% endblock plainPlaceholder %}
+{% block plainInputHelp %}only allow alphabet characters  word: "hello"{% endblock plainInputHelp %}
 
-{% block keyInputType %}number{% endblock keyInputType %}
 
+<!-- key input: -->
+{% block keyTitle %}Enter word to encryption{% endblock keyTitle %}
+{% block keyPlaceholder %}Enter a word to en/decryption...{% endblock keyPlaceholder %}
+{% block keyInputHelp %}only allow alphabet characters  word: "hello"{% endblock keyInputHelp %}
+
+{% block keyInputType %}text{% endblock keyInputType %}
+{% block keyInputMode %}text{% endblock keyInputMode %}
 {% block result %}{{ result }}{% endblock result %}

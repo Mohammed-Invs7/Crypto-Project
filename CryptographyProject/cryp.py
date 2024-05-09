@@ -10,6 +10,7 @@ print(f"dec(Cypher): {''.join(cc2)}")
 print('#' * 50)
 # ###############
 
+
 # AutoKey
 print("AutoKey:")
 plain2 = list("attack is today".replace(' ', '').lower())
@@ -21,6 +22,8 @@ cc2 = AutoKey.decryption(cc2, k2)
 print(f"dec(Cypher): {''.join(cc2)}")
 print('#' * 50)
 # ###############
+
+
 print("DES:")
 # 8 bit plaintext
 plainText = [0, 0, 1, 0, 1, 0, 0, 0]
@@ -39,7 +42,9 @@ result = DES.decryption(result, key)
 print(f"dec(Cypher): {''.join(map(str, result))}")
 print('#' * 50)
 # ###############
-#print("".join(cypherText).upper())
+# print("".join(cypherText).upper())
+
+
 # RSA
 print("RSA:")
 
@@ -56,6 +61,8 @@ print(f"Cypher: {Cypher}")
 print(f"dec(Cypher): {massage}")
 print('#' * 50)
 ##############################
+
+
 # playfair
 # alphabet
 print("playfair:")

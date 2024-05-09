@@ -1,0 +1,54 @@
+{% extends "base_methods.html" %}
+{% load static %}
+
+{% block title %}permutation{% endblock title %}
+
+{% block methodTitle %}Permutation{% endblock methodTitle %}
+
+{% block formAction %}permutation{% endblock formAction %}
+
+{% block ChangeInputs %}
+
+<label class="text-input-label" for="pl">Numbers List</label>
+<div class="input-wrapper">
+    <input id="pl" class="text-input items"  type="text" name="plain" value="{{ plain }}" title="add numbers with space between" required="required" placeholder="num1 num2 num3...">
+
+    <span class="input-icon">
+        <svg viewBox="0 0 20 20">
+            <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm10.01 4a1 1 0 01-1 1H10a1 1 0 110-2h.01a1 1 0 011 1zM11 6a1 1 0 10-2 0v5a1 1 0 102 0V6z"/>
+        </svg>
+        <span class="input-help">Enter number list to permutation it in specific order</span>
+    </span>
+</div>
+
+
+<label class="text-input-label" for="key">Permutation Order</label>
+<div class="input-wrapper">
+    <input lang="en" id="key" class="text-input items" type="text" list="prem" name="key" value="{{ key }}" title="add numbers of positions with space between!"
+           required="required" placeholder="num1 num2 num3..." inputmode="numeric">
+    <datalist id="prem">
+        <option value="3 5 2 7 4 10 1 9 8 6">P10</option>
+        <option value="6 3 7 4 8 5 10 9">P8</option>
+        <option value="2 4 3 1">P4</option>
+        <option value="2 6 3 1 4 8 5 7">IP</option>
+        <option value="4 1 3 5 7 2 8 6">IP -1</option>
+        <option value="4 1 2 3 2 3 4 1">E/P</option>
+    </datalist>
+    <span class="input-icon">
+        <svg viewBox="0 0 20 20">
+            <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm10.01 4a1 1 0 01-1 1H10a1 1 0 110-2h.01a1 1 0 011 1zM11 6a1 1 0 10-2 0v5a1 1 0 102 0V6z"/>
+        </svg>
+        <span class="input-help">list:5 8 9 "order:1 1 2" result:5 5 8</span>
+     </span>
+</div>
+
+
+{% endblock ChangeInputs %}
+{% block resultLabel %}Permutation Result{% endblock resultLabel %}
+{% block resulPlaceholder %}order order order..{% endblock resulPlaceholder %}
+
+{% block changeButtons %}
+<button type="submit" class="box2 items btn-enc" name="type" value="encryption">Permutation</button>
+{% endblock changeButtons %}
+
+{% block result %}{{ result }}{% endblock result %}

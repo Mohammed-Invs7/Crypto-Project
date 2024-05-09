@@ -7,5 +7,8 @@ urlpatterns = [
     path('playfair', views.playfair, name='playfair'),
     path('des', views.des, name='des'),
     path('rsa', views.rsa, name='rsa'),
+    path('modulo', views.modulo, name='modulo'),
+    path('congruence', views.congruence, name='congruence'),
+    path('permutation', views.permutation, name='permutation'),
 ]
 

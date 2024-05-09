@@ -6,7 +6,19 @@
 {% block methodTitle %}S_DES{% endblock methodTitle %}
 
 {% block formAction %}des{% endblock formAction %}
+<!-- form start -->
+<!-- plain input: -->
+{% block plainTitle %}Enter word to encryption{% endblock plainTitle %}
+{% block plainPlaceholder %}Enter a word to en/decryption...{% endblock plainPlaceholder %}
+{% block plainInputHelp %}only allow alphabet characters  word: "hello"{% endblock plainInputHelp %}
 
 {% block plainInputType %}number{% endblock plainInputType %}
+
+<!-- key input: -->
+{% block keyTitle %}Enter word to encryption{% endblock keyTitle %}
+{% block keyPlaceholder %}Enter a word to en/decryption...{% endblock keyPlaceholder %}
+{% block keyInputHelp %}only allow alphabet characters  word: "hello"{% endblock keyInputHelp %}
+
+
 
 {% block result %}{{ result }}{% endblock result %}

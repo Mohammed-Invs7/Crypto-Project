@@ -11,11 +11,26 @@
 	</div>
 	<!-- <hr> -->
 	<div class="flex">
-		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">caeser</button>
-		<button class="box2" onclick="window.location.href='{% url 'autokey' %}'">autokey</button>
-		<button class="box2" onclick="window.location.href='{% url 'playfair' %}'">playfair</button>
-		<button class="box2" onclick="window.location.href='{% url 'des' %}'">s_des</button>
-		<button class="box2" onclick="window.location.href='{% url 'rsa' %}'">rsa</button>
+		<div class="box2" onclick="window.location.href='{% url 'caeser' %}'">
+			<h2>caeser</h2>
+			<p>substitution cipher where each letter in the plaintext is shifted a certain number of positions.</p>
+		</div>
+		<div class="box2" onclick="window.location.href='{% url 'autokey' %}'">
+			<h2>autokey</h2>
+			<p>type of cipher uses a key that is derived from the plaintext itself.</p>
+		</div>
+		<div class="box2" onclick="window.location.href='{% url 'playfair' %}'">
+			<h2>playfair</h2>
+			<p>complex substitution cipher that uses a 5x5 keyword square</p>
+		</div>
+		<div class="box2" onclick="window.location.href='{% url 'des' %}'">
+			<h2>s_des</h2>
+			<p>symmetric block cipher that was once a widely used encryption standard.</p>
+		</div>
+		<div class="box2" onclick="window.location.href='{% url 'rsa' %}'">
+			<h2>rsa</h2>
+			<p>asymmetric cryptographic system that uses a public-key and private-key pair for encryption and decryption.</p>
+		</div>
 	</div>
 
 	<hr>
@@ -24,11 +39,18 @@
 		<hr class="underline">
 	</div>
 		<div class="flex">
-		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">modulo</button>
-		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">congruence</button>
-		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">permutation</button>
-		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">shiftleft</button>
-		<button class="box2" onclick="window.location.href='{% url 'caeser' %}'">sbox</button>
+		<div class="box2" onclick="window.location.href='{% url 'modulo' %}'">
+			<h2>modulo</h2>
+			<p>the remainder after a division operation.</p>
+		</div>
+		<div class="box2" onclick="window.location.href='{% url 'congruence' %}'">
+			<h2>congruence</h2>
+			<p>Two numbers are considered congruent modulo another number a ≡ b (mod n).</p>
+		</div>
+		<div class="box2" onclick="window.location.href='{% url 'permutation' %}'">
+			<h2>permutation</h2>
+			<p>rearrangement of a set of items. It's like taking a group of objects and ordering them differently.</p>
+		</div>
 	</div>
 
 	<!-- 2222222222222222222222 -->

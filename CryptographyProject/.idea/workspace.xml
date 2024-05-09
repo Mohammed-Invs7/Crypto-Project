@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83840f51-bc08-467c-a095-79e99d057178" name="Changes" comment="">
+    <list default="true" id="83840f51-bc08-467c-a095-79e99d057178" name="Changes" comment="edit footer, and design">
+      <change afterPath="$PROJECT_DIR$/templates/congruence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/csspattern.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modulo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/permutation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyApp/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/crypto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryp.py" beforeDir="false" afterPath="$PROJECT_DIR$/cryp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/formStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/formStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/mainStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base_methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/caeser.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/caeser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/des.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/des.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/playfair.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/playfair.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rsa.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rsa.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +57,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\GitHub\Crypto-Project\CryptographyProject\templates" />
       <recent name="C:\Users\user\PycharmProjects\CryptographyProject\templates" />
       <recent name="C:\Users\user\PycharmProjects\CryptographyProject\static\images" />
       <recent name="C:\Users\user\PycharmProjects\CryptographyProject\static\css" />
@@ -64,6 +76,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.manage">
+    <configuration name="cryp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CryptographyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cryp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cryp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CryptographyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,6 +141,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cryp (1)" />
         <item itemvalue="Python.cryp" />
       </list>
     </recent_temporary>
@@ -121,6 +155,14 @@
       <option name="presentableId" value="Default" />
       <updated>1708962906998</updated>
     </task>
+    <task id="LOCAL-00001" summary="edit footer, and design">
+      <created>1714924660586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714924660586</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,5 +175,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edit footer, and design" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit footer, and design" />
   </component>
 </project>

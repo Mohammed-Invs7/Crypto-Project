@@ -149,7 +149,8 @@ class RSA:
 
     @staticmethod
     def congruence(n, n2, nm):
-        return n % nm == n2
+        # Number1 === Number2 (mod Nm)
+        return n % nm == n2 % nm
 
     # RSA Private key Public key
     @classmethod

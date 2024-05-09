@@ -1,0 +1,30 @@
+{% extends "base_methods.html" %}
+{% load static %}
+
+{% block title %}modulo{% endblock title %}
+
+{% block methodTitle %}Modulo{% endblock methodTitle %}
+
+{% block formAction %}modulo{% endblock formAction %}
+<!-- plain input: -->
+{% block plainLabel %}Number 1{% endblock plainLabel %}
+{% block plainTitle %}Please write one number{% endblock plainTitle %}
+{% block plainPlaceholder %}Enter first number{% endblock plainPlaceholder %}
+{% block plainInputHelp %}type any number{% endblock plainInputHelp %}
+
+{% block plainInputType %}number{% endblock plainInputType %}
+
+<!-- key input: -->
+{% block keyLabel %}Number 2{% endblock keyLabel %}
+{% block keyTitle %}Please write one number{% endblock keyTitle %}
+{% block keyPlaceholder %}Enter second number{% endblock keyPlaceholder %}
+{% block keyInputHelp %}type any number{% endblock keyInputHelp %}
+
+{% block resultLabel %}Modulo Result{% endblock resultLabel %}
+{% block resulPlaceholder %}Num1 mod Num2{% endblock resulPlaceholder %}
+
+{% block changeButtons %}
+<button type="submit" class="box2 items btn-enc" name="type" value="encryption">modulo</button>
+{% endblock changeButtons %}
+
+{% block result %}{{ result }}{% endblock result %}

@@ -1,0 +1,46 @@
+{% extends "base_methods.html" %}
+{% load static %}
+
+{% block title %}congruence{% endblock title %}
+
+{% block methodTitle %}Congruence{% endblock methodTitle %}
+
+{% block formAction %}congruence{% endblock formAction %}
+<!-- form start -->
+<!-- plain input: -->
+{% block plainLabel %}Number 1{% endblock plainLabel %}
+{% block plainTitle %}Please write one number{% endblock plainTitle %}
+{% block plainPlaceholder %}Enter first number{% endblock plainPlaceholder %}
+{% block plainInputHelp %}type any number{% endblock plainInputHelp %}
+
+{% block plainInputType %}number{% endblock plainInputType %}
+
+<!-- key input: -->
+{% block keyLabel %}Number 2{% endblock keyLabel %}
+{% block keyTitle %}Please write one number{% endblock keyTitle %}
+{% block keyPlaceholder %}Enter second number{% endblock keyPlaceholder %}
+{% block keyInputHelp %}type any number{% endblock keyInputHelp %}
+
+
+{% block moreInputs %}
+<label class="text-input-label" for="num3">Number 3</label>
+<div class="input-wrapper">
+    <input lang="en" id="num3" class="text-input items" type="number" name="number3" value="{{ number3 }}" title="Please write one number"
+           required="required" placeholder="Enter third Number" inputmode="numeric">
+    <span class="input-icon">
+        <svg viewBox="0 0 20 20">
+            <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm10.01 4a1 1 0 01-1 1H10a1 1 0 110-2h.01a1 1 0 011 1zM11 6a1 1 0 10-2 0v5a1 1 0 102 0V6z"/>
+        </svg>
+        <span class="input-help">type any number</span>
+    </span>
+</div>
+{% endblock moreInputs %}
+
+
+{% block resultLabel %}Congruence Result{% endblock resultLabel %}
+{% block resulPlaceholder %}Num1 === Num2(mod Num3){% endblock resulPlaceholder %}
+
+{% block changeButtons %}
+<button type="submit" class="box2 items btn-enc" name="type" value="encryption">Congruence</button>
+{% endblock changeButtons %}
+{% block result %}{{ result }}{% endblock result %}
