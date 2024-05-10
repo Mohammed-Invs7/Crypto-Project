@@ -5,6 +5,9 @@
 
 {% block methodTitle %}Playfair{% endblock methodTitle %}
 
+{% block methodDescription %}This is a more complex substitution cipher that uses a 5x5 keyword square.
+ Letters are paired together based on their position in the square, and encryption involves substitutions based on these pairs. It's more secure than Caesar cipher but still vulnerable with advanced techniques.{% endblock methodDescription %}
+
 {% block formAction %}playfair{% endblock formAction %}
 <!-- form start -->
 <!-- plain input: -->
@@ -18,6 +21,7 @@
 {% block keyPlaceholder %}Enter a word to en/decryption...{% endblock keyPlaceholder %}
 {% block keyInputHelp %}only allow alphabet characters  word: "hello"{% endblock keyInputHelp %}
 
+{% block keyPattern %}[a-zA-Z]+{% endblock keyPattern %}
 {% block keyInputType %}text{% endblock keyInputType %}
 {% block keyInputMode %}text{% endblock keyInputMode %}
 {% block result %}{{ result }}{% endblock result %}

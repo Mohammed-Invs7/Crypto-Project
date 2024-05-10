@@ -36,6 +36,7 @@ def caeser(request):
         plainList = list(plain.replace(' ', '').lower())
         if Type == "encryption":
             result = ''.join(Caesar.encryption(plainList, key))
+            result = result.upper()
         else:
             result = ''.join(Caesar.decryption(plainList, key))
         context = {
@@ -56,6 +57,7 @@ def autokey(request):
         plainList = list(plain.replace(' ', '').lower())
         if Type == "encryption":
             result = ''.join(AutoKey.encryption(plainList, key))
+            result = result.upper()
         else:
             result = ''.join(AutoKey.decryption(plainList, key))
         context = {
@@ -78,6 +80,7 @@ def playfair(request):
         if Type == "encryption":
             cypherText, table = Playfair.encryption(plainList, keyList)
             result = ''.join(cypherText)
+            result = result.upper()
         else:
             cypherText, table = Playfair.decryption(plainList, keyList)
             result = ''.join(cypherText)

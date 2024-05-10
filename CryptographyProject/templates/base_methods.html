@@ -12,6 +12,7 @@
     <div class="box-title">
         <h1 class="title">{% block methodTitle %}methods{% endblock methodTitle %}</h1>
         <hr class="underline">
+        <P class="description">{% block methodDescription %}{% endblock methodDescription %}</P>
     </div>
 
     <!-- <hr> -->
@@ -21,8 +22,14 @@
             {% block ChangeInputs %}
             <label class="text-input-label" for="pl">{% block plainLabel %}Plain Text{% endblock plainLabel %}</label>
             <div class="input-wrapper">
-                <input id="pl" class="text-input items" type="{% block plainInputType %}text{% endblock plainInputType %}" name="plain" value="{{ plain }}" title="{% block plainTitle %}Enter word to encryption{% endblock plainTitle %}"
-                   required="required" placeholder="{% block plainPlaceholder %}Enter a word to en/decryption...{% endblock plainPlaceholder %}">
+                <input id="pl" class="text-input items"
+                       type="{% block plainInputType %}text{% endblock plainInputType %}"
+                       name="plain"
+                       value="{{ plain }}"
+                       title="{% block plainTitle %}Enter word to encryption{% endblock plainTitle %}"
+                       required="required"
+                       placeholder="{% block plainPlaceholder %}Enter a word to en/decryption...{% endblock plainPlaceholder %}"
+                       pattern="{% block plainPattern %}[a-zA-Z]+{% endblock plainPattern %}">
 
                 <span class="input-icon">
                     <svg viewBox="0 0 20 20">
@@ -36,8 +43,14 @@
 
             <label class="text-input-label" for="key">{% block keyLabel %}Key{% endblock keyLabel %}</label>
             <div class="input-wrapper">
-                <input lang="en" id="key" class="text-input items" type="{% block keyInputType %}number{% endblock keyInputType %}" name="key" value="{{ key }}" title="{% block keyTitle %}Enter a key for use{% endblock keyTitle %}"
-                       required="required" placeholder="{% block keyPlaceholder %}Enter a Key...{% endblock keyPlaceholder %}" inputmode="{% block keyInputMode %}numeric{% endblock keyInputMode %}">
+                <input id="key" class="text-input items"
+                       type="{% block keyInputType %}number{% endblock keyInputType %}"
+                       name="key"
+                       value="{{ key }}"
+                       title="{% block keyTitle %}Enter a key for use{% endblock keyTitle %}"
+                       required="required"
+                       placeholder="{% block keyPlaceholder %}Enter a Key...{% endblock keyPlaceholder %}" inputmode="{% block keyInputMode %}numeric{% endblock keyInputMode %}"
+                       pattern="{% block keyPattern %}[0-9]{% endblock keyPattern %}" >
                 <span class="input-icon">
                         <svg viewBox="0 0 20 20">
                             <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm10.01 4a1 1 0 01-1 1H10a1 1 0 110-2h.01a1 1 0 011 1zM11 6a1 1 0 10-2 0v5a1 1 0 102 0V6z"/>
@@ -54,8 +67,8 @@
             <input id="cy" class="text-input items" type="text" readonly value="{% block result %}{% endblock result %}"
                    placeholder="{% block resulPlaceholder %}The result value will shown here...{% endblock resulPlaceholder %}">
             {% block changeButtons %}
-            <button type="submit" class="box2 items btn-enc" name="type" value="encryption">encryption</button>
-            <button type="submit" class="box2 items btn-dec" name="type" value="decryption" >decryption</button>
+            <button type="submit" class="btn items btn-enc" name="type" value="encryption">encryption</button>
+            <button type="submit" class="btn items btn-dec" name="type" value="decryption" >decryption</button>
             {% endblock changeButtons %}
             {% block moreContent %}{% endblock moreContent %}
         </div>

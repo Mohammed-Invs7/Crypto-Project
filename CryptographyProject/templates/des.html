@@ -5,6 +5,11 @@
 
 {% block methodTitle %}S_DES{% endblock methodTitle %}
 
+{% block methodDescription %}DES is a symmetric block cipher that was once a widely used encryption standard.
+ It uses a fixed key size (usually 56 bits) and a complex algorithm to encrypt and decrypt data in blocks.
+ Due to its short key size, it's considered vulnerable to brute-force attacks with modern computing power. There are also known weaknesses in the algorithm itself.
+{% endblock methodDescription %}
+
 {% block formAction %}des{% endblock formAction %}
 <!-- form start -->
 <!-- plain input: -->
@@ -12,6 +17,7 @@
 {% block plainPlaceholder %}Enter a word to en/decryption...{% endblock plainPlaceholder %}
 {% block plainInputHelp %}only allow alphabet characters  word: "hello"{% endblock plainInputHelp %}
 
+{% block plainPattern %}[0-9]{% endblock plainPattern %}
 {% block plainInputType %}number{% endblock plainInputType %}
 
 <!-- key input: -->

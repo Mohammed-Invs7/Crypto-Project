@@ -5,6 +5,11 @@
 
 {% block methodTitle %}Modulo{% endblock methodTitle %}
 
+{% block methodDescription %}Modulo (denoted by %) refers to the remainder after a division operation.
+For example, 7 modulo 3 is 1 because 7 divided by 3 leaves a remainder of 1.
+In cryptography, modulo is often used in conjunction with other operations like addition or multiplication. It can be used for various purposes, such as creating key schedules or performing calculations within encryption algorithms.
+{% endblock methodDescription %}
+
 {% block formAction %}modulo{% endblock formAction %}
 <!-- plain input: -->
 {% block plainLabel %}Number 1{% endblock plainLabel %}
@@ -12,6 +17,7 @@
 {% block plainPlaceholder %}Enter first number{% endblock plainPlaceholder %}
 {% block plainInputHelp %}type any number{% endblock plainInputHelp %}
 
+{% block plainPattern %}[0-9]{% endblock plainPattern %}
 {% block plainInputType %}number{% endblock plainInputType %}
 
 <!-- key input: -->
@@ -24,7 +30,7 @@
 {% block resulPlaceholder %}Num1 mod Num2{% endblock resulPlaceholder %}
 
 {% block changeButtons %}
-<button type="submit" class="box2 items btn-enc" name="type" value="encryption">modulo</button>
+<button type="submit" class="btn items btn-enc" name="type" value="encryption">modulo</button>
 {% endblock changeButtons %}
 
 {% block result %}{{ result }}{% endblock result %}

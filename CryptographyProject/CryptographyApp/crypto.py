@@ -1,6 +1,7 @@
 alphabet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z')
 
+
 class Caesar:
 
     # Caesar
@@ -34,13 +35,13 @@ class AutoKey:
         return cypherText
 
     @staticmethod
-    def decryption(plainText, key):
-        cypherText = []
+    def decryption(cypherText, key):
+        plainText = []
 
-        for char in plainText:
+        for char in cypherText:
             key = (alphabet.index(char) - key) % 26
-            cypherText.append(alphabet[key])
-        return cypherText
+            plainText.append(alphabet[key])
+        return plainText
         #########
 
 
@@ -163,11 +164,12 @@ class RSA:
         #    return None
         # e * d === 1 (mod c_n)
         for i in range(n):
-            if cls.congruence(e * i, 1, c_n,):
+            if cls.congruence(e * i, 1, c_n, ):
                 d = i
                 break
         # Public key, Private key
         return (e, n), (d, n)
+
 
 class Playfair:
     # playfair
@@ -334,24 +336,24 @@ class Playfair:
 
         return cls.deIntiatePlaintext(plainText), table
 #########################################
-    # playfair
-    # alphabet
-    # plainText = list("instruments".lower().replace(' ', ''))
-    # key = list("monarchy".lower().replace(' ', ''))
-    # print(f"plaintext:\n{plainText}")
-    # print(f"key:\n{key}")
-    # cypherText, table = encryption(plainText, key)
-    # print(f"table:\n{table}")
-    # print(f"cypherText:\n{cypherText}")
-    # plainText, table = decryption(cypherText, key)
-    # print(f"table:\n{table}")
-    # print(f"plaintext:\n{plainText}")
-    ####################################
-    # 'append', 'clear', 'copy', 'count', 'extend',
-    # 'index', 'insert', 'pop', 'remove',
-    #  'reverse', 'sort'
+# playfair
+# alphabet
+# plainText = list("instruments".lower().replace(' ', ''))
+# key = list("monarchy".lower().replace(' ', ''))
+# print(f"plaintext:\n{plainText}")
+# print(f"key:\n{key}")
+# cypherText, table = encryption(plainText, key)
+# print(f"table:\n{table}")
+# print(f"cypherText:\n{cypherText}")
+# plainText, table = decryption(cypherText, key)
+# print(f"table:\n{table}")
+# print(f"plaintext:\n{plainText}")
+####################################
+# 'append', 'clear', 'copy', 'count', 'extend',
+# 'index', 'insert', 'pop', 'remove',
+#  'reverse', 'sort'
 
-    # plainText = list("attack is today".replace(' ',''))
+# plainText = list("attack is today".replace(' ',''))
 # 8 bit plaintext
 # plainText = [0,0,1,0,1,0,0,0]
 # plainText = [1,0,0,0,1,0,1,0]

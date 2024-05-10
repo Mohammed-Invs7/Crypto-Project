@@ -5,15 +5,26 @@
 
 {% block methodTitle %}RSA{% endblock methodTitle %}
 
+{% block methodDescription %}This is an asymmetric cryptographic system that uses a public-key and private-key pair for encryption and decryption.
+ The public key is used to encrypt messages, and the private key is required to decrypt them.
+ RSA is considered very secure for various applications due to the mathematical difficulty of factoring large prime numbers used in key generation.
+{% endblock methodDescription %}
+
 {% block formAction %}rsa{% endblock formAction %}
 
 
 {% block ChangeInputs %}
 
-<label class="text-input-label" for="pl">Plain Text</label>
+<label class="text-input-label" for="pl">Plain Number</label>
 <div class="input-wrapper">
-    <input id="pl" class="text-input items" type="{% block plainInputType %}text{% endblock plainInputType %}" name="plain" value="{{ plain }}" title="{% block plainTitle %}Enter word to encryption{% endblock plainTitle %}"
-       required="required" placeholder="{% block plainPlaceholder %}Enter a word to en/decryption...{% endblock plainPlaceholder %}">
+    <input id="pl" class="text-input items"
+           type="number"
+           name="plain"
+           value="{{ plain }}"
+           title="Enter word to encryption"
+           required="required"
+           placeholder="Enter a word to en/decryption..."
+           pattern="[0-9]" >
 
     <span class="input-icon">
         <svg viewBox="0 0 20 20">
@@ -25,7 +36,14 @@
 
 <label class="text-input-label" for="p">p</label>
 <div class="input-wrapper">
-    <input lang="en" id="p" class="text-input items" type="number" name="p" value="{{ p }}" title="Enter p for use" required="required" placeholder="Enter Q...">
+    <input lang="en" id="p" class="text-input items"
+           type="number"
+           name="p"
+           value="{{ p }}"
+           title="Enter p for use"
+           required="required"
+           placeholder="Enter Q..."
+           pattern="[0-9]">
     <span class="input-icon">
          <svg viewBox="0 0 20 20">
             <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm10.01 4a1 1 0 01-1 1H10a1 1 0 110-2h.01a1 1 0 011 1zM11 6a1 1 0 10-2 0v5a1 1 0 102 0V6z"/>
@@ -36,8 +54,14 @@
 
 <label class="text-input-label" for="q">q</label>
 <div class="input-wrapper">
-    <input lang="en" id="q" class="text-input items" type="number" name="q" value="{{ q }}" title="Enter q for use"
-           required="required" placeholder="Enter P...">
+    <input lang="en" id="q" class="text-input items"
+           type="number"
+           name="q"
+           value="{{ q }}"
+           title="Enter q for use"
+           required="required"
+           placeholder="Enter P..."
+           pattern="[0-9]">
     <span class="input-icon">
         <svg viewBox="0 0 20 20">
             <path fill="#000000" fill-rule="evenodd"
@@ -48,8 +72,14 @@
 </div>
 <label class="text-input-label" for="e">e</label>
 <div class="input-wrapper">
-    <input lang="en" id="e" class="text-input items" type="number" name="e" value="{{ e }}" title="Enter e for use"
-               required="required" placeholder="Enter E...">
+    <input lang="en" id="e" class="text-input items"
+           type="number"
+           name="e"
+           value="{{ e }}"
+           title="Enter e for use"
+           required="required"
+           placeholder="Enter E..."
+           pattern="[0-9]">
     <span class="input-icon">
         <svg viewBox="0 0 20 20">
             <path fill="#000000" fill-rule="evenodd"

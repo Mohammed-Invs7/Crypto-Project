@@ -5,6 +5,11 @@
 
 {% block methodTitle %}AutoKey{% endblock methodTitle %}
 
+{% block methodDescription %} This type of cipher uses a key that is derived from the plaintext itself.
+ Each letter in the plaintext is combined with a subsequent letter (or letters) to create a dynamic keystream for encryption.
+ It's more secure than static key ciphers but can be broken with cryptanalysis.
+{% endblock methodDescription %}
+
 {% block formAction %}autokey{% endblock formAction %}
 
 {% block result %}{{ result }}{% endblock result %}

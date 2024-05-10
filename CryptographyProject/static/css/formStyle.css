@@ -17,6 +17,15 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.box-title .description {
+    padding: 0px 15vw;
+    margin-top: 29px;
+    text-align: center;
+    font-size: 23px;
+}
+
+
+
 input[type=number] {
     -moz-appearance: textfield;
 }
@@ -101,11 +110,25 @@ input[type=number] {
 	margin-top: 5px;
 }
 
-.box2 {
+.btn {
 	flex: none;
 	height: 92px;
     width: 250px;
+    margin-top: 5px;
+    border-radius: 40px;
+    background-color: var(--secondColor);
+    color: inherit;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: "Times New Roman";
+    border: var(--thirdColor) solid;
+    outline: none;
+    cursor: pointer;
+    transition: background .35s,border-color .35s,color .35s!important;
 }
+
 
 .btn-enc {
  background-color: #0f752a;	
