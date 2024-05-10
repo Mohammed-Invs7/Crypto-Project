@@ -1,0 +1,87 @@
+Here's a brief explanation of the mentioned encryption methods:
+
+**1. Caesar Cipher:**
+
+This is a very simple substitution cipher where each letter in the plaintext (original message) is shifted a certain number of positions down the alphabet.
+For example, with a shift of 3, "hello" becomes "khoor."
+It's easy to crack and offers minimal security.
+
+**2. Playfair Cipher:**
+
+ This is a more complex substitution cipher that uses a 5x5 keyword square.
+ Letters are paired together based on their position in the square, and encryption involves substitutions based on these pairs.
+ It's more secure than Caesar cipher but still vulnerable with advanced techniques.
+
+**3. Autokey Cipher:**
+
+ This type of cipher uses a key that is derived from the plaintext itself.
+ Each letter in the plaintext is combined with a subsequent letter (or letters) to create a dynamic keystream for encryption.
+ It's more secure than static key ciphers but can be broken with cryptanalysis.
+
+**4. Small DES (Data Encryption Standard):**
+
+ DES is a symmetric block cipher that was once a widely used encryption standard.
+ It uses a fixed key size (usually 56 bits) and a complex algorithm to encrypt and decrypt data in blocks.
+ Due to its short key size, it's considered vulnerable to brute-force attacks with modern computing power. There are also known weaknesses in the algorithm itself.
+
+**5. RSA (Rivest–Shamir–Adleman):**
+
+ This is an asymmetric cryptographic system that uses a public-key and private-key pair for encryption and decryption.
+ The public key is used to encrypt messages, and the private key is required to decrypt them.
+ RSA is considered very secure for various applications due to the mathematical difficulty of factoring large prime numbers used in key generation.
+
+
+
+permutation
+modulo
+congruence
+shiftleft
+sbox
+
+Here's a brief explanation of the mentioned methods:
+
+**1. Permutation:**
+
+Permutation refers to a rearrangement of a set of items. It's like taking a group of objects and ordering them differently.
+In cryptography, permutations can be used to shuffle data during encryption or decryption processes. This scrambling adds another layer of complexity and makes it harder to decipher the original data.
+
+**2. Modulo:**
+
+Modulo (denoted by %) refers to the remainder after a division operation.
+For example, 7 modulo 3 is 1 because 7 divided by 3 leaves a remainder of 1.
+In cryptography, modulo is often used in conjunction with other operations like addition or multiplication. It can be used for various purposes, such as creating key schedules or performing calculations within encryption algorithms.
+*3. Congruence:**
+
+Two numbers are considered congruent modulo another number (n) if their difference is a multiple of n. In simpler terms, if the remainder is the same when both numbers are divided by n, they are congruent modulo n.
+Written mathematically: a ≡ b (mod n)  means  a - b is a multiple of n.
+Congruence is a fundamental concept in modular arithmetic and plays a role in some cryptographic algorithms, especially those involving public-key cryptography.
+
+**4. Shift Left (or Right):**
+
+A shift operation moves the bits in a binary number a certain number of positions to the left (or right)  without changing the order of the bits that fall out.
+Shifting left is like multiplying the binary number by 2 (each position to the left represents a doubling of the value). Shifting right divides the binary number by 2 (each position to the right represents a halving of the value, discarding the remainder).
+Shift operations are often used in encryption algorithms to manipulate data and perform calculations.
+
+**5. S-box (Substitution Box):**
+
+An S-box is a non-linear table used in some block cipher algorithms like DES.
+It takes a smaller input of data (usually a few bits) and substitutes it with a different, larger output (usually more bits). This substitution adds confusion to the encryption process and makes it harder to reverse engineer the encryption without the knowledge of the S-box.
+The specific contents and design of the S-box are crucial for the security of the cipher.
+
+
+
+
+
+
+
+
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+

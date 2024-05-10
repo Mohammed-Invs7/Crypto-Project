@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83840f51-bc08-467c-a095-79e99d057178" name="Changes" comment="edit footer, and design">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptographyApp/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/crypto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptographyApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/formStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/formStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/autokey.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/autokey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/caeser.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/caeser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/congruence.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/congruence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/des.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/des.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/modulo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/modulo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/permutation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/permutation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/playfair.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/playfair.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rsa.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rsa.html" afterDir="false" />
-    </list>
+    <list default="true" id="83840f51-bc08-467c-a095-79e99d057178" name="Changes" comment="98% complete and design 98%" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714924660586</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="98% complete and design 98%">
+      <created>1715374223733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715374223733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit footer, and design" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit footer, and design" />
+    <MESSAGE value="98% complete and design 98%" />
+    <option name="LAST_COMMIT_MESSAGE" value="98% complete and design 98%" />
   </component>
 </project>
