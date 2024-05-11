@@ -18,6 +18,7 @@
 	--fiveColor: #090d0e;
 	--hoverColor: #061e4a;
 	--focusColor: #031027;
+	--textColor: #0c62ff;
 }
 
 .page-container {
@@ -201,7 +202,7 @@
     font-family: "Times New Roman";
     line-height: 28px;
     border: var(--focusColor) solid;
-    color: #0c62ff;
+    color: var(--textColor);
     outline: none;
     cursor: pointer;
     transition: all .35s;

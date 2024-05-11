@@ -164,7 +164,7 @@ class RSA:
         #    return None
         # e * d === 1 (mod c_n)
         for i in range(n):
-            if cls.congruence(e * i, 1, c_n, ):
+            if cls.congruence(e * i, 1, c_n):
                 d = i
                 break
         # Public key, Private key

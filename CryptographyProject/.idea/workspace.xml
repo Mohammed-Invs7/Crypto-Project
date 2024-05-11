@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83840f51-bc08-467c-a095-79e99d057178" name="Changes" comment="98% complete and design 98%" />
+    <list default="true" id="83840f51-bc08-467c-a095-79e99d057178" name="Changes" comment="edit stings">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyApp/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/crypto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/formStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/formStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/mainStyle.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715374223733</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit stings">
+      <created>1715376656667</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715376656667</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +182,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit footer, and design" />
     <MESSAGE value="98% complete and design 98%" />
-    <option name="LAST_COMMIT_MESSAGE" value="98% complete and design 98%" />
+    <MESSAGE value="edit stings" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit stings" />
   </component>
 </project>

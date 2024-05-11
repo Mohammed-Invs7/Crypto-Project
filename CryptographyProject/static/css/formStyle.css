@@ -146,11 +146,14 @@ input[type=number] {
 
 
 .btn-dec {
- background-color: #750f0f;	
+    background-color: #750f0f;
+    /*    background-color: #00000082;
+    color: #690cff;*/
 }
 
 .btn-dec:hover {
     background-color: #4a0707;
+    /*    background-color: #1a002f9e;*/
 }
 
 .btn-dec:active {
